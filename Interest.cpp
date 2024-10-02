@@ -15,7 +15,9 @@ int main()
     cout << setw(20) << left << "Interest Rate" << ": %";
     cin >> rate;
     amount = principal * pow((1 +((rate/100) / timesC)), timesC);
-    cout << setw(20) << left << "Ammount" << ": $" << setprecision(2) << fixed << amount;
+    cout << setw(20) << left << "Final Ammount" << ": $" << setprecision(2) << fixed << amount << "\n";
+    cout << setw(20) << left << "Interest Earned" << ": $" << setprecision(2) << fixed << (amount - principal);
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
